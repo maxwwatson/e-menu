@@ -11,7 +11,7 @@
 <body>
     
      <!-- Mobile Header-->
-     <nav role="navigation" class="navMobile">
+    <nav role="navigation" class="navMobile">
         <h1>Logo</h1>
         <div id="menuToggle">
             <input type="checkbox" style="display: inline-block;"/>
@@ -38,11 +38,11 @@
     <div>
         <div class="menu-btns">
             <a href="#food" class="btn-menu"><i class="fas fa-utensils"></i>Food</a>
-            <a href="#drink" class="btn-menu"><i class="fas fa-cocktail"></i>Drink</a>
+            <a href="#drinks" class="btn-menu"><i class="fas fa-cocktail"></i>Drink</a>
         </div>
         <div class="menu-btns">
-            <a href="#food" class="btn-menu"><i class="fas fa-utensils"></i>Specials</a>
-            <a href="#drink" class="btn-menu"><i class="fas fa-user-friends"></i></i>About</a>
+            <a href="#specials" class="btn-menu"><i class="fas fa-utensils"></i>Specials</a>
+            <a href="#about" class="btn-menu"><i class="fas fa-user-friends"></i></i>About</a>
         </div>
     </div>
 
@@ -55,19 +55,40 @@
     </div>
     <!-- Menu Items -->
     
-    <!-- Food -->
+    <!-- Food --> 
     <div class="container">
+        <a name="food"></a>
         <h2 class="menu-title">Food</h2>
         <div class="menu-items">
             <p class="menu-section-title">Salads & Appetizers</p>
             <!-- This is what you edit for each item -->
             <div>
-                <p class="menu-item-title">1.<b>Georgian Salad</b> (v)</p>
-                <p class="menu-item-description">tomato, cucumber, onions, peppers parsley, walnut dressing   $12 (2 persons)   $22 (4 persons)</p>
+                <button class="myBtn">
+                    <p class="menu-item-title">1.<b>Georgian Salad</b> (v)</p>
+                    <p class="menu-item-description">tomato, cucumber, onions, peppers parsley, walnut dressing   $12 (2 persons)   $22 (4 persons)</p>
+                </button>
+                <div class="modal myModal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Chmeruui</h1>
+                        <p>Menu Item 1</p>
+                    </div>
+                </div>
             </div>
+            <!-- Item 2 -->
             <div>
-                <p class="menu-item-title">2.<b>Georgian Salad</b> (v)</p>
-                <p class="menu-item-description">tomato, cucumber, onions, peppers parsley, walnut dressing   $12 (2 persons)   $22 (4 persons)</p>
+                <button class="myBtn">
+                    <p class="menu-item-title">2.<b>Georgian Salad</b> (v)</p>
+                    <p class="menu-item-description">tomato, cucumber, onions, peppers parsley, walnut dressing   $12 (2 persons)   $22 (4 persons)</p>
+                </button>
+                <div id="myModal" class="modal myModal" >
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Menu Item 1</p>
+                    </div>
+                </div>
             </div>
             <div>
                 <p class="menu-item-title">3.<b>Georgian Salad</b> (v)</p>
@@ -110,6 +131,7 @@
                 <p class="menu-item-description">tomato, cucumber, onions, peppers parsley, walnut dressing   $12 (2 persons)   $22 (4 persons)</p>
             </div>
         </div>
+        <a name="drinks"></a>
         <h2 class="menu-title">Drinks</h2>
         <div class="menu-items">
             <p class="menu-section-title">White Wine</p>
@@ -120,6 +142,7 @@
             </div>
         </div>
         <!-- Specials -->
+        <a name="specials"></a>
         <h2 class="menu-title">Specials</h2>
         <div class="specials-menu"></div>
          <!-- Tab links -->
@@ -155,7 +178,8 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    
     <script src="https://kit.fontawesome.com/ac950043b1.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
